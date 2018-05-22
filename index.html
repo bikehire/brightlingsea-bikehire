@@ -9,11 +9,15 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <!-- Bulma Version 0.7.1-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+        
         <link rel="stylesheet" type="text/css" href="/css/hero.css">
         <link rel="stylesheet" type="text/css" href="/css/bulma.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/css/cards.css"> -->
+        
     </head>
     <body>
-        
         
         <!-- facebook embed script -->
         <div id="fb-root"></div>
@@ -31,6 +35,10 @@
                top: 0;
                width: 100%
            }
+            
+            .curly{
+                font-family: 'Homemade Apple', cursive;
+            }
         </style>
         
         <section class="hero is-dark is-medium is-bold" style="background-color: blueviolet" id="top">
@@ -44,7 +52,7 @@
                             </a> -->
                             
                             <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/hero.html"  style="background-color: dodgerblue">
+                                <a class="button is-white is-outlined" href="#top"  style="background-color: dodgerblue">
                                     <span class="icon">
                                         <i class="fa fa-bicycle"></i>                             
                                     </span>
@@ -88,11 +96,11 @@
                 body, html {
                     height: 100%;
                 }
-
-                .parallax {
+                .img1{
                     /* The image used */
                     background-image: url('https://raw.githubusercontent.com/scott2000jones/pryzm/gh-pages/images/u2.jpg');
-
+                }
+                .parallax {
                     /* Full height */
                     height: 100%; 
 
@@ -104,11 +112,15 @@
                 }
             </style>
             
-            <div class="hero-body parallax">
-                <div class="container has-text-centered">
-                    
+            <div class="hero-body img1 parallax">
+                <!-- <div id="flow">
+                    <span class="flow-1"></span>
+                    <span class="flow-2"></span>
+                    <span class="flow-3"></span>
+                </div> -->            
+                <div class="container has-text-centered">                  
                     <img src="https://raw.githubusercontent.com/scott2000jones/pryzm/gh-pages/images/brightlingsea1.png" style="height: 250px; width: 250px;">
-                    <h1 class="title" style="font-size: 36px">Brightlingsea Harbour Bike Hire</h1>
+                    <h1 class="title curly" style="font-size: 38px">Brightlingsea Harbour Bike Hire</h1>
                     <h2 class="subtitle container has-text-centered">
                     Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.
                     </h2>
@@ -120,112 +132,181 @@
                 <span class="tag is-info is-rounded">Now Open!</span> Visit us at Waterside, Copperas Road, Brightlingsea CO7 0AU
             </p>
         </div>
-        
         <section class="container">
-            <br>
-            <h2 class="title" id="about">About Us</h2>
-            <div class="columns features">
-                <div class="column is-12">
-                    <div class="message large is-info is-shady">
-                        <div class="message-header"><h4>Brightlingsea Harbour Bike Hire</h4> <i class="fa fa-bicycle"aria-label="delete"></i></div>
-                        <div class="card-content message-body">
-                            
-                            <div class="content">
-                                
-                                <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.</p>
-                                <a href="about.html"><span class="tag is-info is-rounded">Learn more</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="column is-4">
-                    <div class="card is-shady">
-                        <div class="card-image has-text-centered">
-                            <i class="fa fa-empire"></i>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h4>Tempor orci dapibus ultrices in.</h4>
-                                <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                                sed risus.</p>
-                                <p><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card is-shady">
-                        <div class="card-image has-text-centered">
-                            <i class="fa fa-google"></i>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h4> Leo integer malesuada nunc vel risus. </h4>
-                                <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                                <p><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-            <br>
-            <h2 class="title" id="pricing">Pricing</h2>
-            <div class="columns features">
-                <div class="column is-4">
-                    <div class="notification is-success is-shady">
-                        <div class="card-image has-text-centered">
-                            <h2 class="title">£25/£35</h2>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h4>Child's/Adult's Bike Hire and Ferry </h4>
-                                <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline.</p>
-                                <a href="pricing.html"><span class="tag is-white is-rounded">Learn more</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="notification is-info is-shady">
-                        <div class="card-image has-text-centered">
-                            <h2 class="title">£20/£28</h2>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h4>Child's/Adult's Full Day Bike Hire</h4>
-                                <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline.</p>
-                                <a href="pricing.html"><span class="tag is-white is-rounded">Learn more</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="notification is-danger is-shady">
-                        <div class="card-image has-text-centered">
-                            <h2 class="title">£8/£14</h2>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h4>Child's/Adult's 2 Hours Bike Hire</h4>
-                                <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline.</p>
-                                <a href="pricing.html"><span class="tag is-white is-rounded">Learn more</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="has-text-centered" style="align-content: center">
-               <a href="pricing.html"><span class="tag is-dark is-rounded">View full pricing list</span></a></div>
-            <br>
-            <br>
-            
-            <br>
-                <h2 class="title" id="social">Follow Us</h2><br>
-                
             <div class="sandbox">
                 <div class="tile is-ancestor">
-                    <div class="tile is-parent is-shady">
-                        <a href="https://www.facebook.com/Brightlingsea-harbour-bike-hire-1783509455041156/"><article class="message is-info">
+                    <div class="tile is-parent is-shady img2 parallax">
+                        <article class="tile is-child notification is-dark img2 parallax">
+                            <p class="title">Third column</p>
+                            <p class="subtitle">With some content</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                                <a href="pricing.html"><span class="tag is-white is-rounded">Learn more</span></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-shady" style="background-color: dodgerblue">
+                        <a href="pricing.html"><article class="tile is-child notification is-dark"  style="background-color: dodgerblue">
+                            <p class="title">Pricing</p>
+                            <p class="subtitle">See our full list of prices</p>
+                            <div class="content">
+                                <p>We offer bike hire for two hours or a whole day, as well as a full day with a ferry ticket. You can also rent accessories, such as helmets, child seats, and trailers. View our full pricing list for all the details.</p>
+                                <span class="tag is-white is-rounded">Learn more</span>
+                            </div>
+                        </article></a>
+                    </div>
+                    <div class="tile is-parent is-shady img3 parallax">
+                        <a href="#social"><article class="tile is-child notification is-dark img3 parallax">
+                            <p class="title">Follow Us</p>
+                            <p class="subtitle">Where to find us on social media</p>
+                            <div class="content">
+                                <p>Brightlingsea Harbour Bike Hire is active on Facebook, Instagram, and Twitter! Follow us on social media to support us, hear about new cycle routes, and catch any offers.</p><br>
+                                <span class="tag is-white is-rounded">Learn more</span>
+                            </div>
+                        </article></a>
+                    </div>
+                </div>
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-8">
+                        <div class="tile">
+                            <div class="tile is-parent is-vertical">
+                                <style>
+                                    .img2{
+                                        background-image: url(images/u3.jpg);
+                                    }
+                                    .img3{
+                                        background-image: url(images/u4.jpg);
+                                    }
+                                </style>
+                                <article class="img2 parallax tile is-child notification is-dark is-shady">
+                                    <p class="title">Cycle Routes</p>
+                                    <p class="subtitle">See our recommended routes</p>
+                                </article>
+                                <article class="parallax tile is-child notification is-dark is-shady img2"  id="contact">
+                                    <p class="title">Our Bikes</p>
+                                    <p class="subtitle">A full list of the bikes and other equipment available for hire</p>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <style>
+                                    .map{
+                                        background-image: url(images/gmap.jpg);
+                                    }
+                                </style>
+                                <article class="map parallax tile is-child notification is-white is-shady">
+                                    <p class="title">Visit us</p> 
+                                    <p class="subtitle">See our location on Google Maps</p>
+                                    <figure class="image is-4by3">
+                                        
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="message is-parent is-info is-shady has-text-centered">
+                            <div class="message-header" style="background-color: dodgerblue">Contact Form<i class="fa fa-envelope"aria-label="delete"></i></div>
+                            <div class="message-body"><p class="subtitle">Use this form to send us a message, or call us at 01206 615580</p>
+                                <form>
+                                    <div class="field is-horizontal">
+                                        <div class="field-body">
+                                            <div class="field is-shady">
+                                                <p class="control has-icons-left">
+                                                    <input class="input" type="text" placeholder="Name">
+                                                    <span class="icon is-small is-left">
+                                                        <i class="fa fa-user-circle"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="field is-shady">
+                                                <p class="control has-icons-left has-icons-right">
+                                                    <input class="input" type="email" placeholder="Email">
+                                                    <span class="icon is-small is-left">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>              
+                                    <div class="field is-horizontal">
+                                        <div class="field-body">
+                                            <div class="field is-shady">
+                                                <div class="control">
+                                                    <textarea class="textarea" placeholder="What would you like to say?"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field is-horizontal">
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <button class="button is-info is-rounded is-shady" style="background-color: dodgerblue">
+                                                        Send message
+                                                    </button>                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img3 parallax tile is-parent notification is-dark is-shady">
+                        <article class="img3 parallax tile is-child notification is-dark">
+                            <div class="content">
+                                <p class="title">Brightlingsea Harbour Bike Hire</p>
+                                <p class="subtitle">About the company</p>
+                                <div class="content">
+                                    <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.</p>
+                                    <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.</p>
+                                    <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- <div class="tile is-ancestor">
+                    <div class="tile is-parent is-shady" style="background-color: dodgerblue">
+                        <article class="tile is-child notification is-info" style="background-color: dodgerblue">
+                            
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-8 is-shady">
+                        <article class="tile is-child notification is-white">
+                            <p class="title">Main column</p>
+                            <p class="subtitle">With some content</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div> -->
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-8 is-shady">
+                        <article class="tile is-child notification is-white">
+                            
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <a href="https://www.matt-plant.co.uk" target="_blank"><article class="tile is-child notification is-dark is-shady">
+                            <p class="title">Matt Plant</p>
+                            <p class="subtitle">With some content</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                                <figure class="image is-2by1">
+                                    <img src="images/mattplantwhite.png">
+                                </figure>
+                            </div>
+                        </article></a>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <h2 class="title" id="social">Follow Us</h2><br>
+            
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <a href="https://www.facebook.com/Brightlingsea-harbour-bike-hire-1783509455041156/"><article class="message is-info is-shady">
                             <div class="message-header">
                                 <i class="fa fa-facebook-square"></i><p>Facebook</p>
                                 <!-- <button class="delete" aria-label="delete"></button> -->
@@ -235,19 +316,19 @@
                             </div>
                         </article></a>
                     </div>
-                    <div class="tile is-parent is-shady">
-                        <article class="message is-info">
+                    <div class="tile is-parent">
+                        <article class="message is-info is-shady">
                             <div class="message-header">
-                                <i class="fa fa-google"></i><p>Google Maps</p>
+                                <i class="fa fa-instagram"></i><p>Instagram</p>
                                 <!-- <button class="delete" aria-label="delete"></button> -->
                             </div>
                             <div class="message-body">
-                                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:500px;width:450px;'><div id='gmap_canvas' style='height:500px;width:450px;'></div><div><small><a href="http://www.googlemapsgenerator.com/"></a></small></div><div><small><a href="https://ww.buywebtrafficexperts.com/"></a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(51.80424484384838,1.02478851958233),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.80424484384838,1.02478851958233)});infowindow = new google.maps.InfoWindow({content:'<strong>Brightlingsea Harbour Bike Hire</strong><br>Waterside, Copperas Road, Brightlingsea CO7 0AU<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BhtrvqDjbY2/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BhtrvqDjbY2/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">The Impart Project Wristbands #impartproject #bystudentsforstudents</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/teampryzm/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Team Pryzm</a> (@teampryzm) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-04-18T13:40:19+00:00">Apr 18, 2018 at 6:40am PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
                             </div>
                         </article>
                     </div>
-                    <div class="tile is-parent is-shady">
-                        <article class="message is-info">
+                    <div class="tile is-parent">
+                        <article class="message is-info is-shady">
                             <div class="message-header">
                                 <i class="fa fa-twitter-square"></i><p>Twitter</p>
                                 <!-- <button class="delete" aria-label="delete"></button> -->
@@ -258,160 +339,12 @@
                         </article>
                     </div>
                 </div>
-                <!-- <div class="tile is-ancestor">
-                    <div class="tile is-vertical is-8">
-                        <div class="tile">
-                            <div class="tile is-parent is-vertical">
-                                <article class="tile is-child notification is-white">
-                                    <p class="title">Vertical tiles</p>
-                                    <p class="subtitle">Top box</p>
-                                </article>
-                                <article class="tile is-child notification is-white">
-                                    <p class="title">Vertical tiles</p>
-                                    <p class="subtitle">Bottom box</p>
-                                </article>
-                            </div>
-                            <div class="tile is-parent">
-                                <article class="tile is-child notification is-white">
-                                    <p class="title">Middle box</p>
-                                    <p class="subtitle">With an image</p>
-                                    <figure class="image is-4by3">
-                                        <img src="http://bulma.io/images/placeholders/640x480.png">
-                                    </figure>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="tile is-parent is-shady">
-                            <article class="tile is-child notification is-white">
-                                <p class="title">Wide column</p>
-                                <p class="subtitle">Aligned with the right column</p>
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="tile is-parent is-shady">
-                        <article class="tile is-child notification is-white">
-                            <div class="content">
-                                <p class="title">Tall column</p>
-                                <p class="subtitle">With even more content</p>
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula
-                                    eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-                                    <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet
-                                    felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
-                                    <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam
-                                    ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Side column</p>
-                            <p class="subtitle">With some content</p>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="tile is-parent is-8 is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Main column</p>
-                            <p class="subtitle">With some content</p>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent is-8 is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Murphy's law</p>
-                            <p class="subtitle">Anything that can go wrong will go wrong</p>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="tile is-parent is-shady">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Main column</p>
-                            <p class="subtitle">With some content</p>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div> -->
-            </div>
             <br>
             <br>
-            <h2 class="title" id="contact">Contact Us</h2>
-            <br>
-            
-            <div class="has-text-centered message is-info is-shady">
-                <div class="message-header">Contact Form<i class="fa fa-envelope"aria-label="delete"></i></div>
-                <div class="message-body">
-                    <p>Use this form to send us a message, and we'll get back to you by email as soon as possible</p><br>
-                    <form>
-                        <div class="field is-horizontal">
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control has-icons-left">
-                                        <input class="input" type="text" placeholder="Name">
-                                        <span class="icon is-small is-left">
-                                            <i class="fa fa-user-circle"></i>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="field">
-                                    <p class="control has-icons-left has-icons-right">
-                                        <input class="input" type="email" placeholder="Email">
-                                        <span class="icon is-small is-left">
-                                            <i class="fa fa-envelope"></i>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="field is-horizontal">
-                            <div class="field-body">
-                                <div class="field">
-                                    <div class="control">
-                                        <textarea class="textarea" placeholder="What would you like to say?"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="field is-horizontal">
-                            <div class="field-body">
-                                <div class="field">
-                                    <div class="control">
-                                        <button class="button is-info is-rounded">
-                                            Send message
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>   
-            <div class="has-text-centered" style="align-content: center">
-               <span class="tag is-dark is-rounded subtitle" style="font-size: 14px">Or you can call us during the day: 01206 615580</span>
-            </div>
         </section>
         <br>
         <br>
         <br>
-        
         <br>
         <footer class="footer" style="background-color: #f6fbfe">
             <div class="container">
@@ -439,7 +372,7 @@
                             <li>Brightlingsea</li>
                             <li>CO7 0AU</li>
                             <li>Tel: 01206 615580</li>
-                            <li>Email: fake@placeholder.ru</li>
+                            <li>Email: brightlingsea-bikehire@outlook.com</li>
                         </ul>
                     </div>
                     <div class="column is-4">
@@ -477,7 +410,6 @@
                 </div>
             </div>
         </footer>
-        
         <!-- js that enables the smooth scrolling-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
