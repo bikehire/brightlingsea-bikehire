@@ -15,7 +15,8 @@
         <link rel="stylesheet" type="text/css" href="/css/hero.css">
         <link rel="stylesheet" type="text/css" href="/css/bulma.css">
         <!-- <link rel="stylesheet" type="text/css" href="/css/cards.css"> -->
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     </head>
     <body>
         
@@ -71,13 +72,14 @@
                                 <div class="tabs is-right">
                                     <ul>
                                         <li class="is-active"><a href="#top">Home</a></li>
-                                        <li><a href="#about">About Us</a></li>
-                                        <li><a href="#pricing">Pricing</a></li>
+                                        <li><a href="#book">Book Now</a></li>
+                                        <li><a href="#book">About Us</a></li>
+                                        <li><a href="#book">Pricing</a></li>
                                         <li><a href="#social">Follow Us</a></li>
                                         <li><a href="#contact">Contact Us</a></li>
                                     </ul>
                                     <span class="navbar-item">
-                                        <a class="button is-white is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/hero.html"  style="background-color: slategrey">
+                                        <a class="button is-white is-outlined" href="https://github.com/bikehire/brightlingsea-bikehire"  style="background-color: slategrey">
                                             <span class="icon">
                                                 <i class="fa fa-github"></i>
                                             </span>
@@ -103,7 +105,6 @@
                 .parallax {
                     /* Full height */
                     height: 100%; 
-
                     /* Create the parallax scrolling effect */
                     background-attachment: fixed;
                     background-position: center;
@@ -129,19 +130,143 @@
         </section>
         <div class="box cta">
             <p class="has-text-centered">
-                <span class="tag is-info is-rounded">Now Open!</span> Visit us at Waterside, Copperas Road, Brightlingsea CO7 0AU
+                <span class="tag is-info is-rounded"  id="book">Now Open!</span> Visit us at Waterside, Copperas Road, Brightlingsea CO7 0AU
             </p>
         </div>
+        
+        <style>
+            #element-toggle {
+                display: none;
+            }
+            #element-toggle:checked ~ #myModal {
+                display: flex;
+            }
+        </style>
+        
         <section class="container">
             <div class="sandbox">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
-                        <article class="tile is-child notification is-dark is-shady img2 parallax">
-                            <p class="title">Third column</p>
-                            <p class="subtitle">With some content</p>
+                        <article class="tile is-child notification is-dark is-shady">
+                            <p class="title">Book Now</p>
+                            <p class="subtitle">Book your bikes and accessories online</p>
                             <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                                <a href="pricing.html"><span class="tag is-white is-rounded">Learn more</span></a>
+                                <p>Use our online booking form to book your bike hire in advance.</p>
+                                <br>
+                                <br>
+                                <br>
+                                
+                                <!-- Modal trigger 
+                                <label class="button" for="element-toggle">Launch Modal</label>
+                                <input id="element-toggle" type="checkbox" /> 
+                                <span class="tag is-white is-rounded">Book Now</span> -->
+
+                                <label class="tag is-white is-rounded" for="element-toggle">Book Now</label>
+                                <input id="element-toggle" type="checkbox" />
+                                
+                                <!-- Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-background"></div>
+                                    <form method="POST" action="https://formspree.io/brightlingsea-bikehire@outlook.com">
+                                    <div class="modal-card">
+                                        <header class="modal-card-head">
+                                            <p class="modal-card-title">Booking Form</p>
+                                        </header>
+                                        <section class="modal-card-body">
+                                                <div class="field is-horizontal">
+                                                    <div class="field-label is-normal">
+                                                        <label class="label">From</label>
+                                                    </div>
+                                                    <div class="field-body">
+                                                        <div class="field">
+                                                            <p class="control is-expanded has-icons-left">
+                                                                <input class="input" type="text" placeholder="Name" name="Name">
+                                                                <span class="icon is-small is-left">
+                                                                    <i class="fa fa-user"></i>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="field">
+                                                            <p class="control is-expanded has-icons-left">
+                                                                <input class="input" type="email" placeholder="Email" value="" name="Email">
+                                                                <span class="icon is-small is-left">
+                                                                    <i class="fa fa-envelope"></i>
+                                                                </span>
+                                                                
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>                                               
+                                                <div class="field is-horizontal">
+                                                    <div class="field-label"></div>
+                                                    <div class="field-body">
+                                                        <div class="field is-expanded has-icons-left">
+                                                            <div class="field">
+                                                                <p class="control is-expanded">
+                                                                    <input class="input" type="tel" placeholder="Your phone number" name="Phone Number">
+                                                                </p>
+                                                            </div>
+                                                            <p class="help is-dark">Do not enter the first zero</p>
+                                                        </div>
+                                                    </div>
+                                                </div>                
+                                                <div class="field is-horizontal">
+                                                    <div class="field-label is-normal">
+                                                        <label class="label">Hire type</label>
+                                                    </div>
+                                                    <div class="field-body">
+                                                        <div class="field is-narrow">
+                                                            <div class="control">
+                                                                <div class="select is-fullwidth">
+                                                                    <select name="Hire Type">
+                                                                        <option>Full Day with Ferry ticket</option>
+                                                                        <option>Full Day</option>
+                                                                        <option>Two hours</option>
+                                                                        <option>Other (please specify)</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field is-horizontal">
+                                                    <div class="field-label">
+                                                        <label class="label"></label>
+                                                    </div>
+                                                    <div class="field-body">
+                                                        <div class="field is-narrow">
+                                                            <div class="control">
+                                                                <label class="checkbox" style="color: black">
+                                                                    <input type="checkbox" name="Over 18?">
+                                                                    I confirm that I am over 18 years old
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field is-horizontal">
+                                                    <div class="field-label is-normal">
+                                                        <label class="label">Additional Details</label>
+                                                    </div>
+                                                    <div class="field-body">
+                                                        <div class="field">
+                                                            <div class="control">
+                                                                <textarea class="textarea" placeholder="Is there anything else you would like us to know?" name="Additional Details"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </section>
+                                        
+                                        <footer class="modal-card-foot">
+                                            <input class="button is-success" type="submit" value="Submit" name="Submit">
+                                        </footer>
+                                    </div>
+                                        </form>
+                                    <label class="modal-close is-large" for="element-toggle"></label>
+                                </div>
+                                
+                                
                             </div>
                         </article>
                     </div>
@@ -152,7 +277,7 @@
                             <div class="content">
                                 <p>We offer bike hire for two hours or a whole day, as well as a full day with a ferry ticket. You can also rent accessories, such as helmets, child seats, and trailers. View our full pricing list for all the details.</p>
                                 <br>
-								<span class="tag is-white is-rounded">Learn more</span>
+								<span class="tag is-white is-rounded">View the full list</span>
                             </div>
                         </article></a>
                     </div>
@@ -178,6 +303,9 @@
                                     .img3{
                                         background-image: url(images/u4.jpg);
                                     }
+                                    .img4{
+                                        background-image: url(images/fb/cover.jpg);
+                                    }
                                 </style>
                                 <article class="img2 parallax tile is-child notification is-dark is-shady">
                                     <p class="title">Cycle Routes</p>
@@ -194,7 +322,7 @@
                                         background-image: url(images/gmap.jpg);
                                     }
                                 </style>
-                                <article class="map parallax tile is-child notification is-white is-shady">
+                                <article class="map tile is-child notification is-white is-shady">
                                     <p class="title">Visit us</p> 
                                     <p class="subtitle">See our location on Google Maps</p>
                                     <figure class="image is-4by3">
@@ -203,16 +331,17 @@
                                 </article>
                             </div>
                         </div>
-                        <div class="tile is-parent is-white has-text-centered">
+                    
+                    <div class="tile is-parent is-white has-text-centered">
 							<article class="message is-child is-info is-shady has-text-centered">
 								<div class="message-header" style="background-color: dodgerblue">Contact Form<i class="fa fa-envelope"aria-label="delete"></i></div>
 								<div class="message-body"><p class="subtitle">Use this form to send us a message, or call us at 01206 615580</p>
-									<form>
+									<form method="POST" action="https://formspree.io/brightlingsea-bikehire@outlook.com">
 										<div class="field is-horizontal">
 											<div class="field-body">
 												<div class="field is-shady">
 													<p class="control has-icons-left">
-														<input class="input" type="text" placeholder="Name">
+														<input class="input" type="text" placeholder="Name" name="Name">
 														<span class="icon is-small is-left">
 															<i class="fa fa-user-circle"></i>
 														</span>
@@ -220,7 +349,7 @@
 												</div>
 												<div class="field is-shady">
 													<p class="control has-icons-left has-icons-right">
-														<input class="input" type="email" placeholder="Email">
+														<input class="input" type="email" placeholder="Email" name="Email">
 														<span class="icon is-small is-left">
 															<i class="fa fa-envelope"></i>
 														</span>
@@ -232,7 +361,7 @@
 											<div class="field-body">
 												<div class="field is-shady">
 													<div class="control">
-														<textarea class="textarea" placeholder="What would you like to say?"></textarea>
+														<textarea class="textarea" placeholder="What would you like to say?" name="Message"></textarea>
 													</div>
 												</div>
 											</div>
@@ -241,9 +370,7 @@
 											<div class="field-body">
 												<div class="field">
 													<div class="control">
-														<button class="button is-info is-rounded is-shady" style="background-color: dodgerblue">
-															Send message
-														</button>                                                  
+														<input class="button is-success" style="background-color: dodgerblue" type="submit" value="Send Message" name="Send">                      
 													</div>
 												</div>
 											</div>
@@ -253,20 +380,21 @@
 							</article>
                         </div>
                     </div>
-                    <div class="tile is-parent notification is-white">
-                        <article class="img3 parallax tile is-child notification is-dark is-shady">
+                    <div class="tile is-parent">
+                        <a href="https://www.matt-plant.co.uk" target="_blank"><article class="tile is-child notification is-dark is-shady">
+                            <p class="title">Matt Plant</p>
                             <div class="content">
-                                <p class="title">Brightlingsea Harbour Bike Hire</p>
-                                <p class="subtitle">About the company</p>
-                                <div class="content">
-                                    <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.</p>
-                                    <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.</p>
-                                    <p>Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.</p>
-                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <br>
+                                <figure class="image is-2by1">
+                                    <img src="images/mattplantwhite.png">
+                                </figure>
                             </div>
-                        </article>
-                    </div>
+                        </article></a>
+                    </div>   
                 </div>
+                    
+                    
                 <!-- <div class="tile is-ancestor">
                     <div class="tile is-parent is-shady" style="background-color: dodgerblue">
                         <article class="tile is-child notification is-info" style="background-color: dodgerblue">
@@ -283,26 +411,6 @@
                         </article>
                     </div>
                 </div> -->
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent is-8 is-shady">
-                        <article class="tile is-child notification is-white">
-                            
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <a href="https://www.matt-plant.co.uk" target="_blank"><article class="tile is-child notification is-dark is-shady">
-                            <p class="title">Matt Plant</p>
-                            <p class="subtitle">With some content</p>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                                <figure class="image is-2by1">
-                                    <img src="images/mattplantwhite.png">
-                                </figure>
-                            </div>
-                        </article></a>
-                    </div>
-                </div>
-            </div>
             
             <br>
             <h2 class="title" id="social">Follow Us</h2><br>
@@ -355,11 +463,12 @@
                     <div class="column is-3 is-offset-2">
                         <h2><strong>Homepage</strong></h2>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Follow Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#book">Book Now</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#book">Pricing</a></li>
+                            <li><a href="#social">Follow Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
                         </ul>
                         <h2><strong>Other Pages</strong></h2>
                         <ul>
@@ -419,7 +528,6 @@
             $(document).ready(function(){
                 // Add smooth scrolling to all links
                 $("a").on('click', function(event) {
-
                     // Make sure this.hash has a value before overriding default behavior
                     if (this.hash !== "") {
                         // Prevent default anchor click behavior
@@ -427,7 +535,6 @@
                         
                         // Store hash
                         var hash = this.hash;
-
                         // Using jQuery's animate() method to add smooth page scroll
                         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                         $('html, body').animate({
