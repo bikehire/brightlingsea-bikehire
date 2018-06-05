@@ -73,7 +73,7 @@
                                     <ul>
                                         <li class="is-active"><a href="#top">Home</a></li>
                                         <li><a href="#book">Book Now</a></li>
-                                        <li><a href="#book">About Us</a></li>
+                                        <li><a href="#book">Cycle Routes</a></li>
                                         <li><a href="#book">Pricing</a></li>
                                         <li><a href="#social">Follow Us</a></li>
                                         <li><a href="#contact">Contact Us</a></li>
@@ -130,7 +130,7 @@
         </section>
         <div class="box cta">
             <p class="has-text-centered">
-                <span class="tag is-info is-rounded"  id="book">Now Open!</span> Visit us at Waterside, Copperas Road, Brightlingsea CO7 0AU
+                <span class="tag is-info is-rounded"  id="book">Now Open!</span> Show your ticket to the ferryman for a discount!
             </p>
         </div>
         
@@ -147,7 +147,7 @@
             <div class="sandbox">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
-                        <article class="tile is-child notification is-dark is-shady">
+                        <article class="tile is-child notification is-warning is-shady">
                             <p class="title">Book Now</p>
                             <p class="subtitle">Book your bikes and accessories online</p>
                             <div class="content">
@@ -167,7 +167,7 @@
                                 <!-- Modal -->
                                 <div class="modal" id="myModal">
                                     <div class="modal-background"></div>
-                                    <form method="POST" action="https://formspree.io/brightlingsea-bikehire@outlook.com">
+                                    <form method="POST" action="https://formspree.io/booking-brightlingsea-bikehire@outlook.com">
                                     <div class="modal-card">
                                         <header class="modal-card-head">
                                             <p class="modal-card-title">Booking Form</p>
@@ -217,11 +217,10 @@
                                                     <div class="field-body">
                                                         <div class="field is-narrow">
                                                             <div class="control">
-                                                                <div class="select is-fullwidth">
+                                                                <div class="select is-expanded is-fullwidth">
                                                                     <select name="Hire Type">
-                                                                        <option>Full Day with Ferry ticket</option>
-                                                                        <option>Full Day</option>
-                                                                        <option>Two hours</option>
+                                                                        <option>Full Day (£25 for an adult, £10 for a child)</option>
+                                                                        <option>Two hours (£14 for an adult, £5 for a child)</option>
                                                                         <option>Other (please specify)</option>
                                                                     </select>
                                                                 </div>
@@ -229,7 +228,31 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field is-horizontal">
+                                            <div class="field is-horizontal">
+                                                    <div class="field-label is-normal">
+                                                        <label class="label">Number of people</label>
+                                                    </div>
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <p class="control is-expanded has-icons-left">
+                                                            <input class="input" type="text" placeholder="Number of Adults" name="Number of Adults">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-user"></i>
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="field">
+                                                        <p class="control is-expanded has-icons-left">
+                                                            <input class="input" type="text" placeholder="Number of Children" value="" name="Number of Children">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-user"></i>
+                                                            </span>
+                                                                   
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field is-horizontal">
                                                     <div class="field-label">
                                                         <label class="label"></label>
                                                     </div>
@@ -277,12 +300,13 @@
                             <div class="content">
                                 <p>We offer bike hire for two hours or a whole day, as well as a full day with a ferry ticket. You can also rent accessories, such as helmets, child seats, and trailers. View our full pricing list for all the details.</p>
                                 <br>
+                                
 								<span class="tag is-white is-rounded">View the full list</span>
                             </div>
                         </article></a>
                     </div>
                     <div class="tile is-parent">
-                        <a href="#social"><article class="tile is-child notification is-dark is-shady img3 parallax">
+                        <a href="#social"><article class="tile is-child notification is-primary is-shady">
                             <p class="title">Follow Us</p>
                             <p class="subtitle">Where to find us on social media</p>
                             <div class="content">
@@ -304,14 +328,20 @@
                                         background-image: url(images/u4.jpg);
                                     }
                                     .img4{
-                                        background-image: url(images/fb/cover.jpg);
+                                        background-image: url(images/fb/field.jpg);
+                                        background-size: 500px 400px;
+                                    }
+                                    .img5{
+                                        background-image: url(images/fb/blue-fence.jpg);
+                                        background-size: 600px 400px;
+                                        background-position: left center;
                                     }
                                 </style>
-                                <article class="img2 parallax tile is-child notification is-dark is-shady">
-                                    <p class="title">Cycle Routes</p>
-                                    <p class="subtitle">See our recommended routes</p>
+                                <article class="img4 tile is-child notification is-white is-shady">
+                                    <a href="about.html"><p class="title">Cycle Routes</p>
+                                    <p class="subtitle">See our recommended routes</p></a>
                                 </article>
-                                <article class="parallax tile is-child notification is-dark is-shady img2"  id="contact">
+                                <article class="tile is-child notification is-dark is-shady img5">
                                     <p class="title">Our Bikes</p>
                                     <p class="subtitle">A full list of the bikes and other equipment available for hire</p>
                                 </article>
@@ -321,63 +351,23 @@
                                     .map{
                                         background-image: url(images/gmap.jpg);
                                     }
+                                    #rcorners2 {
+                                        border-radius: 6px;
+                                        border: 2px solid #1e90ff;
+                                        padding: 20px; 
+                                        width: 200px;
+                                        height: 150px; 
+                                    }
                                 </style>
-                                <article class="map tile is-child notification is-white is-shady">
+                                <article class="tile is-child notification is-white is-shady" id="rcorners2">
                                     <p class="title">Visit us</p> 
-                                    <p class="subtitle">See our location on Google Maps</p>
-                                    <figure class="image is-4by3">
-                                        
-                                    </figure>
+                                    <div style="border-radius: 10px; width: 385px; overflow: hidden;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.0219091239387!2d1.0226233155990652!3d51.805760296665355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9132cf118ff11%3A0xf1906363601e9850!2sMATT+PLANT+Marine+Services!5e0!3m2!1sen!2suk!4v1528209062532" width="385" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
                                 </article>
                             </div>
                         </div>
                     
                     <div class="tile is-parent is-white has-text-centered">
-							<article class="message is-child is-info is-shady has-text-centered">
-								<div class="message-header" style="background-color: dodgerblue">Contact Form<i class="fa fa-envelope"aria-label="delete"></i></div>
-								<div class="message-body"><p class="subtitle">Use this form to send us a message, or call us at 01206 615580</p>
-									<form method="POST" action="https://formspree.io/brightlingsea-bikehire@outlook.com">
-										<div class="field is-horizontal">
-											<div class="field-body">
-												<div class="field is-shady">
-													<p class="control has-icons-left">
-														<input class="input" type="text" placeholder="Name" name="Name">
-														<span class="icon is-small is-left">
-															<i class="fa fa-user-circle"></i>
-														</span>
-													</p>
-												</div>
-												<div class="field is-shady">
-													<p class="control has-icons-left has-icons-right">
-														<input class="input" type="email" placeholder="Email" name="Email">
-														<span class="icon is-small is-left">
-															<i class="fa fa-envelope"></i>
-														</span>
-													</p>
-												</div>
-											</div>
-										</div>              
-										<div class="field is-horizontal">
-											<div class="field-body">
-												<div class="field is-shady">
-													<div class="control">
-														<textarea class="textarea" placeholder="What would you like to say?" name="Message"></textarea>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="field is-horizontal">
-											<div class="field-body">
-												<div class="field">
-													<div class="control">
-														<input class="button is-success" style="background-color: dodgerblue" type="submit" value="Send Message" name="Send">                      
-													</div>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
-							</article>
+							
                         </div>
                     </div>
                     <div class="tile is-parent">
@@ -445,13 +435,56 @@
                                 <!-- <button class="delete" aria-label="delete"></button> -->
                             </div>
                             <div class="message-body">
-                                <a class="twitter-timeline" data-height="500" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/Sips_?ref_src=twsrc%5Etfw">Tweets by Sips_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                <a class="twitter-timeline" data-height="500" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/bike_harbour">Tweets by Brightlingsea Harbour Bike Hire</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </div>
                         </article>
                     </div>
                 </div>
             <br>
             <br>
+                <h2 class="title" id="contact">Contact Us</h2>
+                <div class="subtitle"><p class="subtitle">Use this form to send us a message, or call us at 01206 615580</p></div>
+                <form method="POST" action="https://formspree.io/booking-brightlingsea-bikehire@outlook.com">
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field is-shady">
+                                <p class="control has-icons-left">
+                                    <input class="input" type="text" placeholder="Name" name="Name">
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-user-circle"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field is-shady">
+                                <p class="control has-icons-left has-icons-right">
+                                    <input class="input" type="email" placeholder="Email" name="Email">
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>              
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field is-shady">
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="What would you like to say?" name="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="button is-success" style="background-color: dodgerblue" type="submit" value="Send Message" name="Send">                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>              
         </section>
         <br>
         <br>
