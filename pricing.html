@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Brightlingsea Harbour Bike Hire</title>
+        <title>Brightlingsea Cycle Hire</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <!-- Bulma Version 0.7.1-->
@@ -15,7 +15,8 @@
         <link rel="stylesheet" type="text/css" href="/css/hero.css">
         <link rel="stylesheet" type="text/css" href="/css/bulma.css">
         <!-- <link rel="stylesheet" type="text/css" href="/css/cards.css"> -->
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="images/bicycle.png">
     </head>
     <body>
         
@@ -52,19 +53,19 @@
                             </a> -->
                             
                             <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="index.html"  style="background-color: dodgerblue">
+                                <a class="button is-white is-outlined" href="#top"  style="background-color: dodgerblue">
                                     <span class="icon">
                                         <i class="fa fa-bicycle"></i>                             
                                     </span>
-                                    <span title="Brightlingsea Harbour Bike Hire">Brightlingsea Harbour Bike Hire</span>
+                                    <span title="Brightlingsea Cycle Hire">Brightlingsea Cycle Hire</span>
                                 </a>
                             </span>
                             
-                            <span class="navbar-burger burger" data-target="navbarMenu">
+                            <a href="#book"><span class="navbar-burger burger" data-target="navbarMenu">
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </span>
+                            </span></a>
                         </div>
                         <div id="navbarMenu" class="navbar-menu">
                             <div class="navbar-end">
@@ -73,7 +74,8 @@
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="index.html">Book Now</a></li>
                                         <li><a href="about.html">Cycle Routes</a></li>
-                                        <li class="is-active"><a href="#navbarMenu">Pricing</a></li>
+										<li><a href="photos.html">Photo Gallery</a></li>
+                                        <li class="is-active"><a href="#top'">Pricing</a></li>
                                         <li><a href="index.html">Follow Us</a></li>
                                         <li><a href="index.html">Contact Us</a></li>
                                     </ul>
@@ -96,18 +98,17 @@
         <br>
         <br>
         <br>
-
         <section class="container">
-            <h2 class="subtitle">Here is our full list of prices for bike hire and accessories. Child prices are for children under 10 years old. Feel free to contact us for any enquiries.</h2>
+            <h2 class="subtitle">Here is our full list of prices for bike hire and accessories. Child prices are for children <i>under 10 years old</i>. Feel free to contact us for any enquiries. You can receive a 10% discount by booking online via the booking form on our homepage.</h2>
             <br>   
             <div class="columns">
-                <div class="column is-5 is-offset-2">
+                <div class="column is-6 is-offset-1">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th><abbr title="Position">Type of Hire</abbr></th>
                                 <th>Adult</th>
-                                <th>Child (under 10)</th>
+                                <th>Child</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -115,27 +116,66 @@
                                 <th>Full Day</th>
                                 <th>£25</th>
                                 <th>£10</th>
+								
                             </tr>
                             <tr>
                                 <th>Two Hours</th>
                                 <th>£14</th>
                                 <th>£5</th>
+
                             </tr>
                             <tr>
                                 <th></th>
                                 <th>
-                                    <span class="button is-rounded is-dark" style="font-size: 7px">Add an additional hour for £4</span>
+                                    <span class="button is-rounded is-dark" style="font-size: 10px">Add an additional hour for £4</span>
                                 </th>
                                 <th>
-                                    <span class="button is-rounded is-dark" style="font-size: 7px">Add an additional hour for £2</span>
+                                    <span class="button is-rounded is-dark" style="font-size: 10px">Add an additional hour for £2</span>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+					<div class="column is-4 ">
+                    <table class="table">
+                        <thead>
+                            <tr>
+								<th><abbr title="Position">Type of Hire</abbr></th>
+                                <th>Adult (booked online)</th>
+								<th>Child (booked online)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+								<th>Full Day</th>
+                                <th>£22.50</th>
+								<th>£9</th>
+                            </tr>
+                            <tr>
+								<th>Two Hours</th>
+								<th>£12.60</th>
+								<th>£4.50</th>
+                            </tr>
+							<tr>
+                                <th></th>
+                                <th>
+                                    <span class="button is-rounded is-dark" style="font-size: 10px">Add an additional hour for £4</span>
+                                </th>
+                                <th>
+                                    <span class="button is-rounded is-dark" style="font-size: 10px">Add an additional hour for £2</span>
                                 </th>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="column is-1">
-                </div>
-                    <div class="column is-4">
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="columns">
+                    <div class="column is-4 is-offset-1">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -162,7 +202,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                </div>
+                </div></div></div>
             </section>
         <br>
         <br>
@@ -172,18 +212,12 @@
             <div class="container">
                 <div class="columns">
                     <div class="column is-3 is-offset-2">
-                        <h2><strong>Homepage</strong></h2>
+                        <h2><strong>On this site</strong></h2>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Follow Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                        <h2><strong>Other Pages</strong></h2>
-                        <ul>
-                            <li><a href="about.html">About the company</a></li>
-                            <li><a href="pricing.html">Full pricing list</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">Cycle Routes</a></li>
+                            <li><a href="photos.html">Photo Gallery</a></li>
                         </ul>
                     </div>
                     <div class="column is-3">
@@ -200,15 +234,15 @@
                     <div class="column is-4">
                         <h2><strong>Social Media</strong></h2>
                         <ul>
-                            <li><a href="#">Facebook</a></li>
+                            <li><a href="https://www.facebook.com/Brightlingsea-harbour-bike-hire-1783509455041156/">Facebook</a></li>
                             <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Twitter</a></li>
+                            <li><a href="https://twitter.com/bike_harbour">Twitter</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="content has-text-centered">
                     <p>
-                        <a class="icon" href="https://github.com/dansup/bulma-templates">
+                        <a class="icon" href="https://github.com/bikehire/brightlingsea-bikehire">
                             <i class="fa fa-github"></i>
                         </a>
                     </p>
