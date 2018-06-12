@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Brightlingsea Cycle Hire</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- Bulma Version 0.7.1-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="/css/hero.css">
+        <link rel="stylesheet" type="text/css" href="/css/bulma.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/css/cards.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="images/bicycle.png">
+        
+    </head>
+    <body>  
+        <style>  
+           .sticky {
+               position: fixed;
+               top: 0;
+               width: 100%
+           }
+            
+            .curly{
+                font-family: 'Homemade Apple', cursive;
+            }
+        </style>
+        
+        <section class="hero is-dark is-medium is-bold" style="background-color: blueviolet" id="top">
+            <div class="hero-head">
+                <nav class="navbar sticky" style="background-color: dodgerblue">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <!-- <a class="navbar-item" href="../">
+                                <img src="https://raw.githubusercontent.com/scott2000jones/pryzm/gh-pages/images/brightlingsea1.png" alt="Logo" >
+                                <span class="tag is-link">Brightlingsea Harbour Bike Hire</span>
+                            </a> -->
+                            
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="#top"  style="background-color: dodgerblue">
+                                    <span class="icon">
+                                        <i class="fa fa-bicycle"></i>                             
+                                    </span>
+                                    <span title="Brightlingsea Cycle Hire">Brightlingsea Cycle Hire</span>
+                                </a>
+                            </span>
+                            
+                            <a href="#book"><span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span></a>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="index.html">Book Now</a></li>
+                                        <li><a href="about.html">Cycle Routes</a></li>
+										<li class="is-active"><a href="#top">Photo Gallery</a></li>
+                                        <li><a href="pricing.html">Pricing</a></li>
+                                        <li><a href="index.html">Follow Us</a></li>
+                                        <li><a href="index.html">Contact Us</a></li>
+                                    </ul>
+                                    <span class="navbar-item">
+                                        <a class="button is-white is-outlined" href="https://github.com/bikehire/brightlingsea-bikehire"  style="background-color: slategrey">
+                                            <span class="icon">
+                                                <i class="fa fa-github"></i>
+                                            </span>
+                                            <span title="View this site's source code on GitHub">View Source</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+
+		<style>
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+		
+        <section class="container">
+            <h1 class="title">Photo Gallery</h1>
+			
+			<div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady">
+                            <img src="images/favourites/arrived-at-mersea.jpg" onclick="openModal();currentSlide(1)" alt="Description">
+                        </figure>
+						<!-- Modal -->
+<div id="myModal" class="modal">
+<div class="modal-background"></div>
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/favourites/arrived-at-mersea.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="images/favourites/bikes-outside-mp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="images/favourites/close-up-bikes-mp.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="images/favourites/on-ferry.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+      <img src="images/favourites/close-up-mens.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="images/favourites/ferry-mersea.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="images/favourites/getting-off-ferry.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="images/favourites/mersea2.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="images/favourites/close-up-female.JPG" style="width:100%">
+    </div>
+    
+    <a class="prev" style="color: white" onclick="plusSlides(-1)"><i class="fa fa-arrow-left"></i></a>
+    <a class="next" style="color: white" onclick="plusSlides(1)"><i class="fa fa-arrow-right"></i></a>
+
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/favourites/arrived-at-mersea.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/favourites/bikes-outside-mp.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/favourites/close-up-bikes-mp.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/favourites/on-ferry.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/favourites/close-up-mens.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/favourites/ferry-mersea.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/favourites/getting-off-ferry.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/favourites/mersea2.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="images/favourites/close-up-female.JPG" style="width:100%" onclick="currentSlide(9)" alt="Northern Lights">
+    </div>
+  </div>
+  <label class="modal-close is-large" onclick="closeModal()"></label>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+                    </article>
+                </div>
+				<div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady"> 
+                            <img src="images/favourites/bikes-outside-mp.jpg" onclick="openModal();currentSlide(2)" alt="Description">
+                        </figure>
+                    </article>
+                </div>
+				<div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady">
+                            <img src="images/favourites/close-up-bikes-mp.jpg" onclick="openModal();currentSlide(3)" alt="Description">
+                        </figure>
+                    </article>
+                </div>
+			</div>
+			
+			<div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady">
+                            <img src="images/favourites/on-ferry.JPG" onclick="openModal();currentSlide(4)" alt="Description">
+                        </figure>
+                    </article>
+                </div>
+				<div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady">
+                            <img src="images/favourites/close-up-mens.jpg" onclick="openModal();currentSlide(5)" alt="Description">
+                        </figure>
+                    </article>
+                </div>
+				<div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady">
+                            <img src="images/favourites/ferry-mersea.jpg" onclick="openModal();currentSlide(6)" alt="Description">
+                        </figure>
+                    </article>
+                </div>
+			</div>
+			
+			<div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady">
+                            <img src="images/favourites/getting-off-ferry.jpg" onclick="openModal();currentSlide(7)" alt="Description">
+                        </figure>
+                    </article>
+                </div>
+				<div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady">
+                            <img src="images/favourites/mersea2.jpg" onclick="openModal();currentSlide(8)" alt="Description">
+                        </figure>
+                    </article>
+                </div>
+				<div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <figure class="image is-4by3 is-shady">
+                            <img src="images/favourites/close-up-female.JPG" onclick="openModal();currentSlide(9)" alt="Description">
+                        </figure>
+                    </article>
+                </div>
+			</div>
+        </section>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class="footer" style="background-color: #f6fbfe">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-3 is-offset-2">
+                        <h2><strong>On this site</strong></h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">Cycle Routes</a></li>
+                            <li><a href="photos.html">Photo Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-3">
+                        <h2><strong>Contact Details</strong></h2>
+                        <ul>
+                            <li>Waterside,</li>
+                            <li>Copperas Road,</li>
+                            <li>Brightlingsea</li>
+                            <li>CO7 0AU</li>
+                            <li>Tel: 01206 615580</li>
+                            <li>Email: brightlingsea-bikehire@outlook.com</li>
+                        </ul>
+                    </div>
+                    <div class="column is-4">
+                        <h2><strong>Social Media</strong></h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Brightlingsea-harbour-bike-hire-1783509455041156/">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="https://twitter.com/bike_harbour">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content has-text-centered">
+                    <p>
+                        <a class="icon" href="https://github.com/bikehire/brightlingsea-bikehire">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </p>
+                    <div class="control level-item">
+                        <a href="https://github.com/scott2000jones">
+                            <div class="tags has-addons">
+                                <span class="tag is-dark is-rounded">Website By Scott Jones</span>
+                                <span class="tag is-info is-rounded">MIT license</span>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="control level-item">
+                        <a href="https://dansup.github.io/bulma-templates/">
+                            <div class="tags has-addons">
+                                <span class="tag is-primary is-rounded">Built with Bulma CSS</span>
+                                <span class="tag is-dark is-rounded">Based on Daniel Supernault's Bulma Templates</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- js that enables the smooth scrolling-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+     
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>  
+    </body>
+</html>
