@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Brightlingsea Harbour Bike Hire</title>
+        <title>Brightlingsea Cycle Hire</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <!-- Bulma Version 0.7.1-->
@@ -17,6 +17,24 @@
         <!-- <link rel="stylesheet" type="text/css" href="/css/cards.css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="icon" type="image/png" href="images/bicycle.png">
+        
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#237afc"
+    },
+    "button": {
+      "background": "#fff",
+      "text": "#237afc"
+    }
+  },
+  "theme": "edgeless"
+})});
+</script>
     </head>
     <body>
         
@@ -57,15 +75,15 @@
                                     <span class="icon">
                                         <i class="fa fa-bicycle"></i>                             
                                     </span>
-                                    <span title="Brightlingsea Harbour Bike Hire">Brightlingsea Harbour Bike Hire</span>
+                                    <span title="Brightlingsea Cycle Hire">Brightlingsea Cycle Hire</span>
                                 </a>
                             </span>
                             
-                            <span class="navbar-burger burger" data-target="navbarMenu">
+                            <a href="#book"><span class="navbar-burger burger" data-target="navbarMenu">
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </span>
+                            </span></a>
                         </div>
                         <div id="navbarMenu" class="navbar-menu">
                             <div class="navbar-end">
@@ -74,6 +92,7 @@
                                         <li class="is-active"><a href="#top">Home</a></li>
                                         <li><a href="#book">Book Now</a></li>
                                         <li><a href="#book">Cycle Routes</a></li>
+										<li><a href="#book">Photo Gallery</a></li>
                                         <li><a href="#book">Pricing</a></li>
                                         <li><a href="#social">Follow Us</a></li>
                                         <li><a href="#contact">Contact Us</a></li>
@@ -100,7 +119,8 @@
                 }
                 .img1{
                     /* The image used */
-                    background-image: url('https://raw.githubusercontent.com/scott2000jones/pryzm/gh-pages/images/u2.jpg');
+                    background-image: url(images/favourites/bikes-outside-mp.jpg);
+					size;
                 }
                 .parallax {
                     /* Full height */
@@ -121,16 +141,19 @@
                 </div> -->            
                 <div class="container has-text-centered">                  
                     <img src="https://raw.githubusercontent.com/scott2000jones/pryzm/gh-pages/images/brightlingsea1.png" style="height: 250px; width: 250px;">
-                    <h1 class="title curly" style="font-size: 38px">Brightlingsea Harbour Bike Hire</h1>
+                    <h1 class="title curly" style="font-size: 38px">Brightlingsea Cycle Hire</h1>
                     <h2 class="subtitle container has-text-centered">
                     Cycling is the best way to explore Brightlingsea and neighbouring villages, as there are plenty of cycling tracks running through the Essex countryside and along the stunning coastline. You may wish to take your time to admire the coastal wildlife or put your fitness to the test and race across the Essex coast- either way be prepared to be windswept by the coastal views and wildlife.
+                    </h2>
+					<h2 class="subtitle container has-text-centered">
+                    Open Monday to Saturday 8am - 4pm, Sunday 10am - 4pm
                     </h2>
                 </div>
             </div>
         </section>
         <div class="box cta">
             <p class="has-text-centered">
-                <span class="tag is-info is-rounded"  id="book">Now Open!</span> Show your ticket to the ferryman for a discount!
+                <span class="tag is-info is-rounded"  id="book">Now Open!</span> Get a 10% discount if you book online!
             </p>
         </div>
         
@@ -149,9 +172,9 @@
                     <div class="tile is-parent">
                         <article class="tile is-child notification is-warning is-shady">
                             <p class="title">Book Now</p>
-                            <p class="subtitle">Book your bikes and accessories online</p>
+                            <p class="subtitle">Book online to receive a 10% discount</p>
                             <div class="content">
-                                <p>Use our online booking form to book your bike hire in advance.</p>
+                                <p>Use our online booking form to book your bike hire in advance and with 10% off!</p>
                                 <br>
                                 <br>
                                 <br>
@@ -219,8 +242,8 @@
                                                             <div class="control">
                                                                 <div class="select is-expanded is-fullwidth">
                                                                     <select name="Hire Type">
-                                                                        <option>Full Day (£25 for an adult, £10 for a child)</option>
-                                                                        <option>Two hours (£14 for an adult, £5 for a child)</option>
+                                                                        <option>Full Day (£22.50 for an adult, £9 for a child)</option>
+                                                                        <option>Two hours (£12.60 for an adult, £4.50 for a child)</option>
                                                                         <option>Other (please specify)</option>
                                                                     </select>
                                                                 </div>
@@ -310,7 +333,7 @@
                             <p class="title">Follow Us</p>
                             <p class="subtitle">Where to find us on social media</p>
                             <div class="content">
-                                <p>Brightlingsea Harbour Bike Hire is active on Facebook, Instagram, and Twitter! Follow us on social media to support us, hear about new cycle routes, and catch any offers.</p><br>
+                                <p>Brightlingsea Cycle Hire is active on Facebook, Instagram, and Twitter! Follow us on social media to support us, hear about new cycle routes, and catch any offers.</p><br>
                                 <span class="tag is-white is-rounded">Learn more</span>
                             </div>
                         </article></a>
@@ -336,14 +359,20 @@
                                         background-size: 600px 400px;
                                         background-position: left center;
                                     }
+									.img6{
+										background-image: url(images/favourites/mersea2.jpg);
+									}
+									.cover{
+										background-image: url(images/favourites/getting-off-ferry.jpg)
+									}
                                 </style>
                                 <article class="img4 tile is-child notification is-white is-shady">
                                     <a href="about.html"><p class="title">Cycle Routes</p>
                                     <p class="subtitle">See our recommended routes</p></a>
                                 </article>
                                 <article class="tile is-child notification is-dark is-shady img5">
-                                    <p class="title">Our Bikes</p>
-                                    <p class="subtitle">A full list of the bikes and other equipment available for hire</p>
+                                    <a href="photos.html"><p class="title">Photo Gallery</p>
+                                    <p class="subtitle">See a range of photos of our bikes around Brightlingsea</p></a>
                                 </article>
                             </div>
                             <div class="tile is-parent">
@@ -361,8 +390,30 @@
                                 </style>
                                 <article class="tile is-child notification is-white is-shady" id="rcorners2">
                                     <p class="title">Visit us</p> 
-                                    <div style="border-radius: 10px; width: 385px; overflow: hidden;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.0219091239387!2d1.0226233155990652!3d51.805760296665355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9132cf118ff11%3A0xf1906363601e9850!2sMATT+PLANT+Marine+Services!5e0!3m2!1sen!2suk!4v1528209062532" width="385" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-                                </article>
+									<style>
+										.intrinsic-container {
+											position: relative;
+											height: 0;
+											overflow: hidden;
+										}
+										/* 16x9 Aspect Ratio */
+										.intrinsic-container-16x9 {
+											padding-bottom: 82.5%;
+										}
+										/* 4x3 Aspect Ratio */
+										.intrinsic-container-4x3 {
+											padding-bottom: 75%;
+										}
+										.intrinsic-container iframe {
+											position: absolute;
+											top:0;
+											left: 0;
+											width: 100%;
+											height: 100%;
+										}
+									</style>
+                                    <div style="border-radius: 10px;" class="intrinsic-container intrinsic-container-16x9"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.0219091239387!2d1.0226233155990652!3d51.805760296665355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9132cf118ff11%3A0xf1906363601e9850!2sMATT+PLANT+Marine+Services!5e0!3m2!1sen!2suk!4v1528209062532" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+								</article>
                             </div>
                         </div>
                     
@@ -374,7 +425,7 @@
                         <a href="https://www.matt-plant.co.uk" target="_blank"><article class="tile is-child notification is-dark is-shady">
                             <p class="title">Matt Plant</p>
                             <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <p>Brightlingsea Cycle Hire is associated with Matt Plant Marine Services. </p>
                                 <br>
                                 <figure class="image is-2by1">
                                     <img src="images/mattplantwhite.png">
@@ -494,19 +545,12 @@
             <div class="container">
                 <div class="columns">
                     <div class="column is-3 is-offset-2">
-                        <h2><strong>Homepage</strong></h2>
+                        <h2><strong>On this site</strong></h2>
                         <ul>
-                            <li><a href="#top">Home</a></li>
-                            <li><a href="#book">Book Now</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#book">Pricing</a></li>
-                            <li><a href="#social">Follow Us</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                        </ul>
-                        <h2><strong>Other Pages</strong></h2>
-                        <ul>
-                            <li><a href="about.html">About the company</a></li>
-                            <li><a href="pricing.html">Full pricing list</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">Cycle Routes</a></li>
+                            <li><a href="photos.html">Photo Gallery</a></li>
                         </ul>
                     </div>
                     <div class="column is-3">
@@ -523,15 +567,15 @@
                     <div class="column is-4">
                         <h2><strong>Social Media</strong></h2>
                         <ul>
-                            <li><a href="#">Facebook</a></li>
+                            <li><a href="https://www.facebook.com/Brightlingsea-harbour-bike-hire-1783509455041156/">Facebook</a></li>
                             <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Twitter</a></li>
+                            <li><a href="https://twitter.com/bike_harbour">Twitter</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="content has-text-centered">
                     <p>
-                        <a class="icon" href="https://github.com/dansup/bulma-templates">
+                        <a class="icon" href="https://github.com/bikehire/brightlingsea-bikehire">
                             <i class="fa fa-github"></i>
                         </a>
                     </p>
