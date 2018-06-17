@@ -1,5 +1,5 @@
-# brightlingsea-bikehire
+# Brightlingsea Cycle Hire
 Website for Brighlingsea Harbour Bike Hire
 
-View the site's homepage at:
-https://bikehire.github.io/brightlingsea-bikehire/index.html
+View the site at:
+https://brightlingsea-cycle-hire.co.uk
